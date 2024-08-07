@@ -175,6 +175,8 @@
 <script src="./assets/javascript/javascript.js"></script>
 <script>
     $(document).ready(function() {
+        var flag_0 = 0;
+        var flag_1 = 1;
         for (let index = 0; index < 2; index++) {
             $('#sex_' + index).click(function() {
                 if(index == 0) {
@@ -182,12 +184,32 @@
                     $('#sex_0').attr('class', 'back-cccc font-color-white button-25 font-30 margin-5 orange-active');
                     $('#sex_1').removeAttr('class');
                     $('#sex_1').attr('class', 'back-cccc font-color-white button-25 font-30 margin-5');
+                    if(flag_0 == 1) {
+                        $('#sex_0').removeAttr('class');
+                        $('#sex_0').attr('class', 'back-cccc font-color-white button-25 font-30 margin-5');
+                        $('#sex_1').removeAttr('class');
+                        $('#sex_1').attr('class', 'back-cccc font-color-white button-25 font-30 margin-5');
+                        flag_0 = 0;
+                    } else {
+                        flag_0++;
+                        flag_1 = 1;
+                    }
                 }
                 if(index == 1) {
                     $('#sex_0').removeAttr('class');
                     $('#sex_0').attr('class', 'back-cccc font-color-white button-25 font-30 margin-5');
                     $('#sex_1').removeAttr('class');
                     $('#sex_1').attr('class', 'back-cccc font-color-white button-25 font-30 margin-5 orange-active');
+                    if(flag_1 == 2) {
+                        $('#sex_0').removeAttr('class');
+                        $('#sex_0').attr('class', 'back-cccc font-color-white button-25 font-30 margin-5');
+                        $('#sex_1').removeAttr('class');
+                        $('#sex_1').attr('class', 'back-cccc font-color-white button-25 font-30 margin-5');
+                        flag_1 = 1
+                    } else {
+                        flag_1++;
+                        flag_0 = 0;
+                    }
                 }
             })            
         }
