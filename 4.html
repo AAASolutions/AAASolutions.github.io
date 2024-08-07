@@ -42,8 +42,8 @@
         </div>
         <div class="display-flex">
             <p class="font-color-949494 font-30">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;性別&nbsp;&nbsp;&nbsp;&nbsp;</p>
-            <button type="button" class="back-cccc font-color-white button-25 font-30 margin-5">男性</button>
-            <button type="button" class="back-cccc font-color-white button-25 font-30 margin-5">女性</button>
+            <button type="button" class="back-cccc font-color-white button-25 font-30 margin-5" id="sex_0">男性</button>
+            <button type="button" class="back-cccc font-color-white button-25 font-30 margin-5" id="sex_1">女性</button>
         </div>
         <div class="display-flex">
             <p class="font-color-949494 font-30">郵便番号</p>
@@ -134,7 +134,7 @@
                     <P>会員へのご登録に際し「プライバシーポリシー」についてよくお読みいただき、<br>
                         ご同意いただけましたら、下の項目にチェックを入れてください。</P>
                 </div>
-                <div class="width-80 display-left-2">
+                <div class="width-80 display-left-2 display-flex">
                     <input type="checkbox" class="not_use"><label
                         class="button-25 font-30 margin-7 font-color-949494 font-bold">同意する</label></input>
                 </div>
@@ -171,6 +171,26 @@
     </div>
 
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="./assets/javascript/javascript.js"></script>
-
+<script>
+    $(document).ready(function() {
+        for (let index = 0; index < 2; index++) {
+            $('#sex_' + index).click(function() {
+                if(index == 0) {
+                    $('#sex_0').removeAttr('class');
+                    $('#sex_0').attr('class', 'back-cccc font-color-white button-25 font-30 margin-5 orange-active');
+                    $('#sex_1').removeAttr('class');
+                    $('#sex_1').attr('class', 'back-cccc font-color-white button-25 font-30 margin-5');
+                }
+                if(index == 1) {
+                    $('#sex_0').removeAttr('class');
+                    $('#sex_0').attr('class', 'back-cccc font-color-white button-25 font-30 margin-5');
+                    $('#sex_1').removeAttr('class');
+                    $('#sex_1').attr('class', 'back-cccc font-color-white button-25 font-30 margin-5 orange-active');
+                }
+            })            
+        }
+    });
+</script>
 </html>

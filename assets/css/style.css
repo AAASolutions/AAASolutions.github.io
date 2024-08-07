@@ -644,3 +644,8 @@ a {
 .display-left-2{
     justify-content: left; margin-left: 2%;
 }
+
+.orange-active {
+    background-color: orange !important;
+    color: white;
+}
