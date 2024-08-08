@@ -24,37 +24,51 @@
         <p>レンタルウェア1日</p>
         <div class="margin-10" ><p>大人 *****円</p><p class="child">小人 *****円</p></div> 
         <div class="font-lighter font-20 margin-10"><p>利用す</p></div>
-        <button class="under_arrow button-border" id="under_arrow" onclick="hide_usedate();"><img src="./assets/img/up_arrow.jpg" class="under_arrow"></button>
-        <button class="under_arrow button-border display-none" id="up_arrow" onclick="show_usedate();"><img src="./assets/img/under_arrow.jpg" class="under_arrow"></button>
+        <button class="under_arrow button-border" id="under_arrow" onclick="hide_usedate();"><img src="./assets/img/under_arrow.jpg" class="under_arrow"></button>
+        <button class="under_arrow button-border display-none" id="up_arrow" onclick="show_usedate();"><img src="./assets/img/up_arrow.jpg" class="under_arrow"></button>
         </div>
-        <div>
-            <div class="use" id="">
-                <div class="font-bold font-color-949494 font-25"><p>利用日</p></div>
-                <select class="width-30 back-cccc font-30 font-color-white font-bold margin-10" name="" id="">
-                <option value="選択してください">選択してください</option>
-                <option value="選択してください">選択してください</option>
-                <option value="選択してください">選択してください</option>
-            </select>
-            </div>
-            <div class="use_date" id="usedate">
-                <div><p class="font-color-949494 margin-20"> 大人(12歳以上)</p>
-                    <div class="display-flex margin-top-20px">
-                        <div><button type="button" class="minius_button minus_width" onclick="minus()">-</button><p class="minus" >減らす</p></div>
-                        <div class="over12_number"><span class="number" id="number">0</span></div>
-                        <div><button type="button" class="plus_button" onclick="plus()">+</button><p class="plus ">増やす</p></div>
+        <div class="use" id="use">
+            <div class="font-bold font-color-949494 font-25"><p>利用日</p></div>
+            <select class="width-30 back-cccc font-30 font-color-white font-bold margin-10" name="" id="">
+            <option value="選択してください">選択してください</option>
+            <option value="選択してください">選択してください</option>
+            <option value="選択してください">選択してください</option>
+        </select>
+        </div>
+                <div class="use_date" id="usedate">
+                    
+                    <div><p class="font-color-949494 margin-20"> 大人(12歳以上)</p>
+                        <div class="display-flex margin-top-20px">
+                            <div><button type="button" class="minius_button minus_width" onclick="minus()">-</button><p class="minus" >減らす</p></div>
+                            <div class="over12_number"><span class="number" id="number">0</span></div>
+                            <div><button type="button" class="plus_button" onclick="plus()">+</button><p class="plus ">増やす</p></div>
+                        </div>
+                    </div>
+                    <div class="margin-10" ><p class="margin-40 font-color-949494">小人</p>
+                        <div class="display-flex margin-top-20px">
+                            <div><button type="button" class="minius_button minus_width" onclick="rentalwear_number_minus()" >-</button><p class="minus" >減らす</p></div>
+                            <div class="over12_number"><span class="rentalwear_number" id="rentalwear_number">0</span></div>
+                            <div><button type="button" class="plus_button" onclick="rentalwear_number_plus()">+</button><p class="plus">増やす</p></div>
+                        </div>
                     </div>
                 </div>
-                <div class="margin-10" ><p class="margin-40 font-color-949494">小人</p>
-                    <div class="display-flex margin-top-20px">
-                        <div><button type="button" class="minius_button minus_width" onclick="rentalwear_number_minus()" >-</button><p class="minus" >減らす</p></div>
-                        <div class="over12_number"><span class="rentalwear_number" id="rentalwear_number">0</span></div>
-                        <div><button type="button" class="plus_button" onclick="rentalwear_number_plus()">+</button><p class="plus">増やす</p></div>
-                    </div>
-                </div>
             </div>
-            <div class="display-flex"><p class="underline"></p></div>
+            
+            <div class="display-flex margin-25" style="justify-content: left;"> 
+                <input type="checkbox" class="not_use"></input> <p class="margin-5 font-20 font-bold font-color-949494">利用しない</p> </div> <div class="display-flex"></div>
+        <div class="display-flex"><p class="underline"></p></div>
         </div>
-        <div id="show_rental"></div>
+        <div id="add_rentalwear"></div>
+        <div id="show_rental">
+            <div class="rental_wear"> 
+                <p>レンタルボード</p> 
+                <div class="margin-10" ><p>大人 *****円</p><p class="child">小人 *****円</p></div> 
+                <div class="font-lighter font-20 margin-10"><p>利用する</p></div> 
+                <button class="under_arrow button-border" onclick="add_rentalwear();"> <img src="./assets/img/plus.jpg" > </button> </div> 
+                <div class="display-flex margin-25" style="justify-content: left;"> 
+                <input type="checkbox" class="not_use"></input> <p class="margin-5 font-20 font-bold font-color-949494">利用しない</p> </div> <div class="display-flex"><p class="underline"></p>
+            </div>
+        </div>
         <div class="selected_accommodation_radio" id="selected_accommodation_radio"> 
             <div class="display-flex font-color-white font-bold font-30"><p class="">ご旅行代金合計</p> 
                 <div class="margin-10">
@@ -63,14 +77,14 @@
             </div>
         </div>
         <div class="display-flex" >
-            <button class="back_calendar">カレンダーへ戻る</button>
-            <button class="choose_shinkansen">新幹線の選択へ</button>
+            <button class="back_calendar"><a class="font-color-white" href="./2.html" >カレンダーへ戻る</a></button>
+            <button class="choose_shinkansen"><a class="font-color-white" href="./4.html" >新幹線の選択へ</a></button>
          </div>
          <div class="final_button">
-            <a class="display-flex enter_people" href="./index.html">利用人数の入力</a>
-            <a class="display-flex enter_people" href="./index.html">新幹線の選択</a>
-            <a class="display-flex enter_people active" href="./index.html">オプションの選択</a>
-            <a class="display-flex enter_people" href="./index.html">利用者情報</a>
+            <a class="enter_people display-flex" href="./index.html">利用人数の入力</a>
+            <a class="enter_people display-flex" href="./index.html">新幹線の選択</a>
+            <a class="enter_people display-flex" href="./index.html">オプションの選択</a>
+            <a class="enter_people display-flex" href="./index.html">利用者情報</a>
         </div>
 </body>
 <script src="./assets/javascript/javascript.js"></script>
