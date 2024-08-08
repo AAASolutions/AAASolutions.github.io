@@ -30,7 +30,7 @@ function under12_plus() {
         let i = 0;
         document.getElementById('select_age_container').innerHTML = "<div></div>"
         while(i< number){
-            let result = '<div class="age_modal" id="age_modal"><div><p>'+(i+1)+'人目</p></div><select class="select_age" name="age" id="age"><option value="1歳">1歳</option><option value="2歳">2歳</option><option value="3歳">3歳</option><option value="4歳">4歳</option><option value="5歳">5歳</option><option value="6歳">6歳</option><option value="7歳">7歳</option><option value="8歳">8歳</option><option value="9歳">9歳</option><option value="10歳">10歳</option><option value="11歳">11歳</option></select><input type="radio" ><label>添寝しな</label></input><input type="radio" ><label>添寝する</label></input></div>';
+            let result = '<div class="age_modal" id="age_modal"><div><p>'+(i+1)+'人目</p></div><select class="select_age" name="age" id="age"><option value="1歳">1歳</option><option value="2歳">2歳</option><option value="3歳">3歳</option><option value="4歳">4歳</option><option value="5歳">5歳</option><option value="6歳">6歳</option><option value="7歳">7歳</option><option value="8歳">8歳</option><option value="9歳">9歳</option><option value="10歳">10歳</option><option value="11歳">11歳</option></select><input type="radio" name="sleeping" ><label>添寝しな</label></input><input type="radio" name="sleeping"><label>添寝する</label></input></div>';
             document.getElementById('select_age_container').innerHTML  += result;
             i++;
             }
@@ -50,7 +50,7 @@ function under12_minus() {
     let i = 0;
     document.getElementById('select_age_container').innerHTML = "<div></div>"
     while(i< number){
-        let result = '<div class="age_modal" id="age_modal"><div><p>'+(i+1)+'人目</p></div><select class="select_age" name="age" id="age"><option value="1歳">1歳</option><option value="2歳">2歳</option><option value="3歳">3歳</option><option value="4歳">4歳</option><option value="5歳">5歳</option><option value="6歳">6歳</option><option value="7歳">7歳</option><option value="8歳">8歳</option><option value="9歳">9歳</option><option value="10歳">10歳</option><option value="11歳">11歳</option></select><input type="radio" ><label>添寝しな</label></input><input type="radio" ><label>添寝する</label></input></div>';
+        let result = '<div class="age_modal" id="age_modal"><div><p>'+(i+1)+'人目</p></div><select class="select_age" name="age" id="age"><option value="1歳">1歳</option><option value="2歳">2歳</option><option value="3歳">3歳</option><option value="4歳">4歳</option><option value="5歳">5歳</option><option value="6歳">6歳</option><option value="7歳">7歳</option><option value="8歳">8歳</option><option value="9歳">9歳</option><option value="10歳">10歳</option><option value="11歳">11歳</option></select><input name="sleeping" type="radio" ><label>添寝しな</label></input><input name="sleeping" type="radio" ><label>添寝する</label></input></div>';
         document.getElementById('select_age_container').innerHTML  += result;
         i++;
         }
@@ -88,7 +88,7 @@ function under12_plus2() {
         let i = 0;
         document.getElementById('select_age_container2').innerHTML = "<div></div>"
         while(i< number){
-            let result = '<div class="age_modal" id="age_modal"><div><p>'+(i+1)+'人目</p></div><select class="select_age" name="age" id="age"><option value="1歳">1歳</option><option value="2歳">2歳</option><option value="3歳">3歳</option><option value="4歳">4歳</option><option value="5歳">5歳</option><option value="6歳">6歳</option><option value="7歳">7歳</option><option value="8歳">8歳</option><option value="9歳">9歳</option><option value="10歳">10歳</option><option value="11歳">11歳</option></select><input type="radio" ><label>添寝しな</label></input><input type="radio" ><label>添寝する</label></input></div>';
+            let result = '<div class="age_modal" id="age_modal"><div><p>'+(i+1)+'人目</p></div><select class="select_age" name="age" id="age"><option value="1歳">1歳</option><option value="2歳">2歳</option><option value="3歳">3歳</option><option value="4歳">4歳</option><option value="5歳">5歳</option><option value="6歳">6歳</option><option value="7歳">7歳</option><option value="8歳">8歳</option><option value="9歳">9歳</option><option value="10歳">10歳</option><option value="11歳">11歳</option></select><input name="sleeping" type="radio" ><label>添寝しな</label></input><input type="radio" name="sleeping" ><label>添寝する</label></input></div>';
             document.getElementById('select_age_container2').innerHTML  += result;
             i++;
             }
@@ -108,7 +108,7 @@ function under12_minus2() {
     let i = 0;
     document.getElementById('select_age_container2').innerHTML = "<div></div>"
     while(i< number){
-        let result = '<div class="age_modal" id="age_modal"><div><p>'+(i+1)+'人目</p></div><select class="select_age" name="age" id="age"><option value="1歳">1歳</option><option value="2歳">2歳</option><option value="3歳">3歳</option><option value="4歳">4歳</option><option value="5歳">5歳</option><option value="6歳">6歳</option><option value="7歳">7歳</option><option value="8歳">8歳</option><option value="9歳">9歳</option><option value="10歳">10歳</option><option value="11歳">11歳</option></select><input type="radio" ><label>添寝しな</label></input><input type="radio" ><label>添寝する</label></input></div>';
+        let result = '<div class="age_modal" id="age_modal"><div><p>'+(i+1)+'人目</p></div><select class="select_age" name="age" id="age"><option value="1歳">1歳</option><option value="2歳">2歳</option><option value="3歳">3歳</option><option value="4歳">4歳</option><option value="5歳">5歳</option><option value="6歳">6歳</option><option value="7歳">7歳</option><option value="8歳">8歳</option><option value="9歳">9歳</option><option value="10歳">10歳</option><option value="11歳">11歳</option></select><input name="sleeping" type="radio" ><label>添寝しな</label></input><input name="sleeping" type="radio" ><label>添寝する</label></input></div>';
         document.getElementById('select_age_container2').innerHTML  += result;
         i++;
         }
@@ -145,7 +145,7 @@ function under12_plus3() {
         let i = 0;
         document.getElementById('select_age_container3').innerHTML = "<div></div>"
         while(i< number){
-            let result = '<div class="age_modal" id="age_modal"><div><p>'+(i+1)+'人目</p></div><select class="select_age" name="age" id="age"><option value="1歳">1歳</option><option value="2歳">2歳</option><option value="3歳">3歳</option><option value="4歳">4歳</option><option value="5歳">5歳</option><option value="6歳">6歳</option><option value="7歳">7歳</option><option value="8歳">8歳</option><option value="9歳">9歳</option><option value="10歳">10歳</option><option value="11歳">11歳</option></select><input type="radio" ><label>添寝しな</label></input><input type="radio" ><label>添寝する</label></input></div>';
+            let result = '<div class="age_modal" id="age_modal"><div><p>'+(i+1)+'人目</p></div><select class="select_age" name="age" id="age"><option value="1歳">1歳</option><option value="2歳">2歳</option><option value="3歳">3歳</option><option value="4歳">4歳</option><option value="5歳">5歳</option><option value="6歳">6歳</option><option value="7歳">7歳</option><option value="8歳">8歳</option><option value="9歳">9歳</option><option value="10歳">10歳</option><option value="11歳">11歳</option></select><input name="sleeping" type="radio" ><label>添寝しな</label></input><input name="sleeping" type="radio" ><label>添寝する</label></input></div>';
             document.getElementById('select_age_container3').innerHTML  += result;
             i++;
             }
@@ -165,7 +165,7 @@ function under12_minus3() {
     let i = 0;
     document.getElementById('select_age_container3').innerHTML = "<div></div>"
     while(i< number){
-        let result = '<div class="age_modal" id="age_modal"><div><p>'+(i+1)+'人目</p></div><select class="select_age" name="age" id="age"><option value="1歳">1歳</option><option value="2歳">2歳</option><option value="3歳">3歳</option><option value="4歳">4歳</option><option value="5歳">5歳</option><option value="6歳">6歳</option><option value="7歳">7歳</option><option value="8歳">8歳</option><option value="9歳">9歳</option><option value="10歳">10歳</option><option value="11歳">11歳</option></select><input type="radio" ><label>添寝しな</label></input><input type="radio" ><label>添寝する</label></input></div>';
+        let result = '<div class="age_modal" id="age_modal"><div><p>'+(i+1)+'人目</p></div><select class="select_age" name="age" id="age"><option value="1歳">1歳</option><option value="2歳">2歳</option><option value="3歳">3歳</option><option value="4歳">4歳</option><option value="5歳">5歳</option><option value="6歳">6歳</option><option value="7歳">7歳</option><option value="8歳">8歳</option><option value="9歳">9歳</option><option value="10歳">10歳</option><option value="11歳">11歳</option></select><input type="radio" name="sleeping"><label>添寝しな</label></input><input type="radio" name="sleeping"><label>添寝する</label></input></div>';
         document.getElementById('select_age_container3').innerHTML  += result;
         i++;
         }
@@ -202,7 +202,7 @@ function under12_plus4() {
         let i = 0;
         document.getElementById('select_age_container4').innerHTML = "<div></div>"
         while(i< number){
-            let result = '<div class="age_modal" id="age_modal"><div><p>'+(i+1)+'人目</p></div><select class="select_age" name="age" id="age"><option value="1歳">1歳</option><option value="2歳">2歳</option><option value="3歳">3歳</option><option value="4歳">4歳</option><option value="5歳">5歳</option><option value="6歳">6歳</option><option value="7歳">7歳</option><option value="8歳">8歳</option><option value="9歳">9歳</option><option value="10歳">10歳</option><option value="11歳">11歳</option></select><input type="radio" ><label>添寝しな</label></input><input type="radio" ><label>添寝する</label></input></div>';
+            let result = '<div class="age_modal" id="age_modal"><div><p>'+(i+1)+'人目</p></div><select class="select_age" name="age" id="age"><option value="1歳">1歳</option><option value="2歳">2歳</option><option value="3歳">3歳</option><option value="4歳">4歳</option><option value="5歳">5歳</option><option value="6歳">6歳</option><option value="7歳">7歳</option><option value="8歳">8歳</option><option value="9歳">9歳</option><option value="10歳">10歳</option><option value="11歳">11歳</option></select><input type="radio" name="sleeping" ><label>添寝しな</label></input><input type="radio" name="sleeping" ><label>添寝する</label></input></div>';
             document.getElementById('select_age_container4').innerHTML  += result;
             i++;
             }
@@ -222,7 +222,7 @@ function under12_minus4() {
     let i = 0;
     document.getElementById('select_age_container4').innerHTML = "<div></div>"
     while(i< number){
-        let result = '<div class="age_modal" id="age_modal"><div><p>'+(i+1)+'人目</p></div><select class="select_age" name="age" id="age"><option value="1歳">1歳</option><option value="2歳">2歳</option><option value="3歳">3歳</option><option value="4歳">4歳</option><option value="5歳">5歳</option><option value="6歳">6歳</option><option value="7歳">7歳</option><option value="8歳">8歳</option><option value="9歳">9歳</option><option value="10歳">10歳</option><option value="11歳">11歳</option></select><input type="radio" ><label>添寝しな</label></input><input type="radio" ><label>添寝する</label></input></div>';
+        let result = '<div class="age_modal" id="age_modal"><div><p>'+(i+1)+'人目</p></div><select class="select_age" name="age" id="age"><option value="1歳">1歳</option><option value="2歳">2歳</option><option value="3歳">3歳</option><option value="4歳">4歳</option><option value="5歳">5歳</option><option value="6歳">6歳</option><option value="7歳">7歳</option><option value="8歳">8歳</option><option value="9歳">9歳</option><option value="10歳">10歳</option><option value="11歳">11歳</option></select><input type="radio" name="sleeping" ><label>添寝しな</label></input><input type="radio" name="sleeping" ><label>添寝する</label></input></div>';
         document.getElementById('select_age_container4').innerHTML  += result;
         i++;
         }
